@@ -2,6 +2,10 @@
 
 This package lets `agent-browser` use a Session hosted by Baizhi Cloud Browser as its remote CDP browser. The service creates and owns the browser; `agent-browser` keeps its existing page commands for navigation, snapshots, clicks, and form input.
 
+## Service capabilities and this plugin
+
+The current Baizhi Cloud Browser service also offers viewing links, confirmed human takeover, and optional network routes through HTTP/MCP. This v0.1.3 plugin has not gained new native commands for those features. Use its documented commands below, and consult the [service guide](../../docs/live-view-and-routes.md) when extending your own management flow. Coordinate client pause and resume during human control; do not start a second run for the same task.
+
 ## Requirements
 
 - Node.js 24 or newer.

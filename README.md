@@ -41,10 +41,12 @@ https://capybrowser.app.baizhi.cloud/docs/installation.md
 | --- | --- | --- |
 | [Playwright／Puppeteer 等 CDP 客户端](https://capybrowser.app.baizhi.cloud/docs/installation.md) | 服务接入指南；沿用已有网页操作代码连接云端浏览器 | HTTP／MCP 管理运行，CDP 客户端操作页面 |
 | [agent-browser](integrations/agent-browser/README.md) | 可安装的独立插件；管理云端运行，沿用 agent-browser 网页命令 | [v0.1.3 已发布](https://github.com/ctcbyzx/baizhi-cloud-browser/releases/tag/v0.1.3)；对应 Node.js 24+、agent-browser 0.38.2 |
-| [browser-use](docs/browser-use.md) | 网页读取示例、环境准备与异常恢复指南 | [草稿 PR #6100](https://github.com/browser-use/browser-use/pull/6100) 待审核；示例可从维护者分支获取 |
-| [DeerFlow](docs/deerflow.md) | HTTP MCP 配置指南与插件目录入口说明 | [草稿 PR #6976](https://github.com/bytedance/deer-flow/pull/6976) 待审核；可先手动配置 HTTP MCP |
+| [browser-use](docs/browser-use.md) | 网页读取示例、环境准备与异常恢复指南 | [PR #6100](https://github.com/browser-use/browser-use/pull/6100) 正式待审、尚未合并；示例可从维护者分支获取 |
+| [DeerFlow](docs/deerflow.md) | HTTP MCP 配置指南与插件目录入口说明 | [PR #6976](https://github.com/bytedance/deer-flow/pull/6976) 正式待审、尚未合并；可先手动配置 HTTP MCP |
+| [Cline](docs/integrations.md#cline-与-kilo) | 远程 MCP 市场条目与手动配置入口 | [PR #308](https://github.com/cline/marketplace/pull/308) 正式待审、尚未合并 |
+| [Kilo](docs/integrations.md#cline-与-kilo) | 远程 MCP 市场条目与 API Key 配置入口 | [PR #454](https://github.com/Kilo-Org/kilo-marketplace/pull/454) 正式待审、尚未合并 |
 
-接入状态核对于 2026-10-20，最新状态以发布页或 PR 为准。agent-browser 插件的 v0.1.3 安装包保留在维护者原仓库的 GitHub Release 中；browser-use 和 DeerFlow 的待审内容在各自上游仓库维护。更多说明见[生态集成说明](docs/integrations.md)。
+接入状态核对于 2026-10-23，最新状态以发布页或 PR 为准。agent-browser 插件的 v0.1.3 安装包保留在维护者原仓库的 GitHub Release 中；browser-use 和 DeerFlow 的待审内容在各自上游仓库维护。更多说明见[生态集成说明](docs/integrations.md)。
 
 ## 连接信息
 

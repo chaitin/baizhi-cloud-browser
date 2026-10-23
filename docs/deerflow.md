@@ -20,6 +20,10 @@ API Key 放在 DeerFlow 的凭据配置中，不放进对话或版本控制。�
 
 我们向 DeerFlow 提交了[目录卡片 PR #6976](https://github.com/bytedance/deer-flow/pull/6976)，尚未合并。在包含该变更的版本中，可通过“能力中心 → 插件”搜索“百智云云浏览器”，然后填写连接名称、服务地址和授权请求头。当前版本若没有这张卡片，使用其已有的 HTTP MCP 配置入口手动添加；具体菜单以所用 DeerFlow 版本的说明为准。
 
+## 按需观看和选择线路
+
+当前服务通过 MCP 提供观看链接与可用线路查询。连接后以实际发现的工具为准：用户要求看进展时可为已有运行调用 `browser_create_view_link`；用户要求指定线路时先用 `browser_list_egress_lines` 查询目录。只读观看不抢占 Agent 控制；人工接管仍需用户明确要求和页面确认。完整操作与费用边界见[观看、交接与网络线路](live-view-and-routes.md)。这不会自动替换 DeerFlow 的页面操作客户端。
+
 ## 开始使用
 
 1. 保存连接后，让 Agent 先调用 `browser_auth_check` 验证身份，再调用 `browser_pricing` 查询当前价格；这两步不启动浏览器。
